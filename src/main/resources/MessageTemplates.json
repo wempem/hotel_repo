@@ -1,0 +1,17 @@
+{
+  "greetings" : [
+    "Welcome to",
+    "Greetings from",
+    "Warm salutations from your friends at"
+  ],
+  "statements" : [
+    "is now ready for you",
+    "has been prepared and cleaned for your stay",
+    "is awaiting you"
+  ],
+  "closings" : [
+    "Enjoy your stay, and let us know if you need anything",
+    "Welcome again, and please don't hesitate to contact us",
+    "We hope you have a pleasant experience staying with us"
+  ]
+}
