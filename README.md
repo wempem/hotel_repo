@@ -1,50 +1,50 @@
-#Requirements
+# Requirements
 
 Gradle and a JRE that supports Java 11
 
-#How to Build
+# How to Build
 Navigate to the root of the project and run `gradlew build`
 
-#How to Run
+# How to Run
 
 At the root of the folder run `Java -jar build/libs/hotel-0.0.1-SNAPSHOT.jar`
 
 Alternatively, if you have an IDE you can run the application from the Hotel Application class.
 
-#Design Decisions
+# Design Decisions
 
-###File Structure
+### File Structure
 I split all the code into the message package. I structured it this way in the event that more functionality would be added in for example a `booking` suite.
 
-###Message Structure
+### Message Structure
 I structured the message templates into three seperate entities. The greeting representing the first thing said after
 the clients name. The statement which comes after the room is listed. Then finally the closing to wrap up the message.
 
-###POJOs
+### POJOs
 
 The pojo classes were created to represent the JSON structures. This allowed for easy translation from JSON to class. 
 
-###Service
+### Service
 
 The `MessageService` is where I stored the majority of the code. I structured it in a way that would allow for easily readability
 and maintainability. I decided to store this as a service as eventually I could refactor this to place a controller on top
 of it allowing for API functionality.
 
-###User choices
+### User choices
 I tried to keep my approach to usability as rudimentary as possible. For the majority of the prompts, the user only has the 
 option to enter a single integer corresponding with a particular value.
 
-#Why Java?
+# Why Java?
 
 I chose Java as it has been my most prominent language as of late. I have both professional and personal experience making
 projects within Java. With trying to keep this project short, I wanted to leverage certain libraries that I was already familiar with.
 
-#Validation
+# Validation
 
 I used validation for this project by running through various inputs that I knew would cause issues. I structured my code
 to prevent certain exceptions to be thrown.
 
-#Future Changes
+# Future Changes
 
 1. I would switch the CLI input to an angular front-end. It would greatly improve the overall user experience and allow 
     for more flexibility from a development standpoint (This approach would then have to see a Controller being added in for
